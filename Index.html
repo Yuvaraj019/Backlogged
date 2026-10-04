@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Backloggd Clone</title>
+  <link rel="stylesheet" href="Webpage_Style.css" />
+  <link rel="stylesheet" href="Countdown_Style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="logo">Backloggd</div>
+      <div class="user">
+        <span>Quixote Games</span>
+        <input type="text" id="searchInput" placeholder="Search games..." aria-label="Search games" />
+        <!-- Log game button removed -->
+      </div>
+
+      <section class="profile">
+        <img
+          src="https://raw.githubusercontent.com/Yuvaraj019/Showly/b06cb8ec71237fbfed35b5eaf2e7cc0564815094/Webpage/Webpages/Profile.jpeg"
+          alt="Monkey D. Luffy Avatar"
+          class="avatar"
+        />
+        <div class="username">G H O S T</div>
+      </section>
+    </header>
+
+    <nav class="tabs" role="navigation" aria-label="Main navigation tabs">
+      <div class="tab-buttons">
+        <button class="active-tab" aria-current="page" id="gamesTabBtn">Games</button>
+        <button id="showAllBtn">Show All Games</button>
+        <button id="countdownTabBtn">Countdown</button>
+      </div>
+      <div class="sort-filters">
+        <!-- Sort buttons will be injected here by JS -->
+      </div>
+    </nav>
+
+    <!-- Games grid -->
+    <main class="grid-container" id="gameContainer"></main>
+
+    <div class="pagination" id="paginationContainer"></div>
+
+ <!-- Countdown section, hidden by default -->
+    <section class="countdown-container hidden" id="countdownContainer" aria-label="Game Release Countdown">
+      <!-- 007 First Light -->
+      <div class="countdown-card" style="background-image: url('https://cdn2.steamgriddb.com/hero/57ddec47b17c7faba15bf606d3a01664.png');">
+        <div class="overlay"></div>
+        <div class="card-content">
+          <h2>007 First Light</h2>
+          <div class="release-date">27 May 2026</div>
+          <div class="timer-container">
+            <div class="timer">
+              <div class="time-block">
+                <div class="digits" id="007-days"></div>
+                <div class="label">DAYS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="007-hours"></div>
+                <div class="label">HOURS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="007-minutes"></div>
+                <div class="label">MINUTES</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ghost of Yōtai -->
+      <div class="countdown-card" style="background-image: url('https://cdn2.steamgriddb.com/hero/e1a3a6f38219e9a9689dc1d029efa285.png');">
+        <div class="overlay"></div>
+        <div class="card-content">
+          <h2>Ghost of Yōtai</h2>
+          <div class="release-date">2 October 2025</div>
+          <div class="timer-container">
+            <div class="timer">
+              <div class="time-block">
+                <div class="digits" id="yotai-days"></div>
+                <div class="label">DAYS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="yotai-hours"></div>
+                <div class="label">HOURS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="yotai-minutes"></div>
+                <div class="label">MINUTES</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resident Evil 9 -->
+      <div class="countdown-card" style="background-image: url('https://cdn2.steamgriddb.com/hero/a96cd3f98ef245653fc2658bbcdabb27.jpg');">
+        <div class="overlay"></div>
+        <div class="card-content">
+          <h2>Resident Evil 9: Requiem</h2>
+          <div class="release-date">27 February 2026</div>
+          <div class="timer-container">
+            <div class="timer">
+              <div class="time-block">
+                <div class="digits" id="re-days"></div>
+                <div class="label">DAYS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="re-hours"></div>
+                <div class="label">HOURS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="re-minutes"></div>
+                <div class="label">MINUTES</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GTA VI -->
+      <div class="countdown-card" style="background-image: url('https://cdn2.steamgriddb.com/hero/838c3442d88f204d75d335378e18c5ec.png');">
+        <div class="overlay"></div>
+        <div class="card-content">
+          <h2>GTA VI</h2>
+          <div class="release-date">26 May 2026</div>
+          <div class="timer-container">
+            <div class="timer">
+              <div class="time-block">
+                <div class="digits" id="gta-days"></div>
+                <div class="label">DAYS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="gta-hours"></div>
+                <div class="label">HOURS</div>
+              </div>
+              <div class="divider">|</div>
+              <div class="time-block">
+                <div class="digits" id="gta-minutes"></div>
+                <div class="label">MINUTES</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="Webpage_Script.js"></script>
+  <script src="Countdown_Script.js"></script>
+</body>
+</html>

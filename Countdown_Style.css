@@ -1,0 +1,146 @@
+.hidden {
+  display: none !important;
+}
+
+
+.countdown-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.countdown-card {
+  position: relative;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.countdown-card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.release-date {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digits {
+  display: flex;
+  gap: 6px;
+}
+
+.digit {
+  font-size: 2.8rem;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  min-width: 40px;
+  text-align: center;
+  color: #fff;
+  user-select: none;
+}
+
+.label {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: #eee;
+  font-weight: 600;
+  user-select: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 2.8rem;
+  color: #fff;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .countdown-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .digit {
+    font-size: 2rem;
+    padding: 8px 12px;
+    min-width: 30px;
+  }
+
+  .divider {
+    font-size: 2rem;
+  }
+
+  .label {
+    font-size: 0.7rem;
+  }
+}
