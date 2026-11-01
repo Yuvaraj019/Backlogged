@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const defaultGames = [
   {
+    "title": "Castlevania: Belmont's Curse",
+    "image": "https://cdn2.steamgriddb.com/grid/cf56b981790bf3ad622276d9e97228ff.png",
+    "rating": 8.6,
+    "playtime":"20h 00m" 
+  },
+  {
     "title": "Silent Hill: Townfall",
     "image": "https://cdn2.steamgriddb.com/grid/c5feaba9bd5eea1f30f48b003e1b45a0.png",
     "rating": 8.8,
