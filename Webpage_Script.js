@@ -16,6 +16,12 @@ const defaultGames = [
     "rating": 8.6,
     "playtime":"20h 00m" 
   },
+    {
+    "title": "REPLACED",
+    "image": "https://cdn2.steamgriddb.com/grid/c52d15f12196428e65a2dde81d324d1d.jpg",
+    "rating": 8.0,
+    "playtime":"18h 45m" 
+  },
   {
     "title": "Silent Hill: Townfall",
     "image": "https://cdn2.steamgriddb.com/grid/c5feaba9bd5eea1f30f48b003e1b45a0.png",
