@@ -714,9 +714,9 @@ const defaultGames = [
   },
   {
     "title": "Tales of Kenzera: ZAU",
-    "image": "https://cdn2.steamgriddb.com/grid/2f4995803660b60b3d255fdbbb8a4618.png",
-    "rating": null,
-    "playtime": null
+    "image": "https://cdn2.steamgriddb.com/grid/4f083f9efc165785db3ef3255f13c787.png",
+    "rating": 7.8,
+    "playtime": "12h 45mm"
   }
 ]
 
