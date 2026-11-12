@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const paginationContainer = document.getElementById("paginationContainer");
 
 const defaultGames = [
-    {
+  {
     "title": "Onimusha: Way of the Sword",
     "image": "https://cdn2.steamgriddb.com/grid/5109ebb6d05db53b4d9a5a4d4aedb5a2.jpg",
     "rating": 9.7,
@@ -22,7 +22,7 @@ const defaultGames = [
     "rating": 8.6,
     "playtime":"20h 00m" 
   },
-    {
+  {
     "title": "REPLACED",
     "image": "https://cdn2.steamgriddb.com/grid/c52d15f12196428e65a2dde81d324d1d.jpg",
     "rating": 8.0,
