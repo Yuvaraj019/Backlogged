@@ -13,7 +13,7 @@ const defaultGames = [
     {
     "title": "Onimusha: Way of the Sword",
     "image": "https://cdn2.steamgriddb.com/grid/5109ebb6d05db53b4d9a5a4d4aedb5a2.jpg",
-    "rating": 9.8,
+    "rating": 9.7,
     "playtime":"42h 30m" 
   },
   {
