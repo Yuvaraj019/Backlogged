@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const paginationContainer = document.getElementById("paginationContainer");
 
 const defaultGames = [
+    {
+    "title": "Onimusha: Way of the Sword",
+    "image": "https://cdn2.steamgriddb.com/grid/5109ebb6d05db53b4d9a5a4d4aedb5a2.jpg",
+    "rating": 9.8,
+    "playtime":"42h 30m" 
+  },
   {
     "title": "Castlevania: Belmont's Curse",
     "image": "https://cdn2.steamgriddb.com/grid/cf56b981790bf3ad622276d9e97228ff.png",
