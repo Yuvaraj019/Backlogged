@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const paginationContainer = document.getElementById("paginationContainer");
 
 const defaultGames = [
+    {
+    "title": "Call of Duty: Modern Warfare 4",
+    "image": "https://cdn2.steamgriddb.com/grid/287f9b0ee45a7e61275206688ebc6544.jpg",
+    "rating": 8.5,
+    "playtime":"12h 45m" 
+  },
   {
     "title": "Onimusha: Way of the Sword",
     "image": "https://cdn2.steamgriddb.com/grid/5109ebb6d05db53b4d9a5a4d4aedb5a2.jpg",
